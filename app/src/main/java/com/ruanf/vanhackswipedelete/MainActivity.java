@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity implements RecycleItemHelper
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager( this );
         recyclerView.setLayoutManager( layoutManager );
         recyclerView.setItemAnimator( new DefaultItemAnimator() );
-        recyclerView.addItemDecoration( new DividerItemDecoration( this, DividerItemDecoration.VERTICAL ) );
+        //recyclerView.addItemDecoration( new DividerItemDecoration( this, DividerItemDecoration.VERTICAL ) );
         recyclerView.setAdapter( adapter );
 
         ItemTouchHelper.SimpleCallback itemTSimpleCallback = new RecycleItemHelper( 0,ItemTouchHelper.LEFT, this );

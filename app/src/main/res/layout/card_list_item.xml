@@ -1,15 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
+    
+    <android.support.v7.widget.CardView
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="16dp"
+        >
 
     <RelativeLayout
         android:id="@+id/view_background"
         android:background="@color/bgRowBackground"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        
+
         <ImageView
             android:id="@+id/delete_icon"
             android:layout_alignParentRight="true"
@@ -18,7 +26,7 @@
             android:src="@drawable/ic_bomb"
             android:layout_width="30dp"
             android:layout_height="30dp" />
-        
+
         <TextView
             android:layout_centerVertical="true"
             android:layout_marginRight="10dp"
@@ -28,9 +36,9 @@
             android:text="Delete"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
-        
+
     </RelativeLayout>
-    
+
     <RelativeLayout
         android:id="@+id/view_foreground"
         android:background="@android:color/white"
@@ -67,5 +75,7 @@
             android:layout_height="wrap_content" />
 
     </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
 
 </FrameLayout>
