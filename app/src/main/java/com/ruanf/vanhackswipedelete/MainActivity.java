@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity implements RecycleItemHelper
 
         recyclerView = (RecyclerView)findViewById( R.id.recycler_view );
         rootLayout = (CoordinatorLayout)findViewById( R.id.rootLayout );
-        list = new ArrayList<>(  );
+        list = new ArrayList<>();
         adapter = new Adapter( this, list );
 
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager( this );

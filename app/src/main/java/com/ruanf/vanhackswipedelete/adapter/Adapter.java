@@ -38,11 +38,10 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder>{
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder myViewHolder, final int i) {
 
-        Item item = list.get( i );
+        final Item item = list.get( i );
         myViewHolder.name.setText( item.getName() );
-        myViewHolder.currency.setText( item.getCurrency() );
         myViewHolder.language.setText( item.getLanguage() );
-
+        myViewHolder.currency.setText( item.getCurrency() );
     }
 
     @Override
@@ -65,15 +64,15 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder>{
 
     public class MyViewHolder extends RecyclerView.ViewHolder{
 
-        public TextView name, currency, language;
+        public TextView name, language, currency;
         public RelativeLayout viewBackground, viewForeground;
 
         public MyViewHolder(View itemView)
         {
             super(itemView);
             name = itemView.findViewById( R.id.name );
-            currency = itemView.findViewById( R.id.currency );
             language = itemView.findViewById( R.id.language );
+            currency = itemView.findViewById( R.id.currency );
             viewBackground = itemView.findViewById( R.id.view_background );
             viewForeground = itemView.findViewById( R.id.view_foreground );
         }
