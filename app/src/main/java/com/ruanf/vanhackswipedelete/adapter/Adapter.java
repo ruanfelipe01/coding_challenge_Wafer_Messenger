@@ -66,7 +66,6 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder>{
     public class MyViewHolder extends RecyclerView.ViewHolder{
 
         public TextView name, currency, language;
-        public ImageView thumbnail;
         public RelativeLayout viewBackground, viewForeground;
 
         public MyViewHolder(View itemView)
@@ -76,7 +75,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder>{
             currency = itemView.findViewById( R.id.currency );
             language = itemView.findViewById( R.id.language );
             viewBackground = itemView.findViewById( R.id.view_background );
-            viewForeground = itemView.findViewById( R.id.view_foregroud );
+            viewForeground = itemView.findViewById( R.id.view_foreground );
         }
     }
 }

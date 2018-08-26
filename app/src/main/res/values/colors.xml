@@ -3,7 +3,7 @@
     <color name="colorPrimary">#111111</color>
     <color name="colorPrimaryDark">#FFFFFF</color>
     <color name="colorAccent">#9e31f7</color>
-    <color name="bgRowBackgroud">#9e31f7</color>
+    <color name="bgRowBackground">#9e31f7</color>
     <color name="itemName">#535353</color>
-    <color name="Description">#a9a9a9</color>
+    <color name="Language">#535353</color>
 </resources>
